@@ -15,10 +15,6 @@ using Android;
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
-[assembly: UsesPermission(Manifest.Permission.AccessFineLocation)]
-[assembly: UsesPermission(Manifest.Permission.AccessCoarseLocation)]
-[assembly: UsesPermission(Manifest.Permission.Internet)]
-
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.

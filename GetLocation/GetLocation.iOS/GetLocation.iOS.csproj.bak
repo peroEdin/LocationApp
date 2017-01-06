@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GetLocation.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>GetLocationiOS</AssemblyName>
+    <AssemblyName>GetLocation.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>

@@ -60,6 +60,9 @@ namespace GetLocation.Droid
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050005
+			public const int accelerometer_text = 2131034117;
+			
 			// aapt resource value: 0x7f050003
 			public const int address_text = 2131034115;
 			
@@ -71,6 +74,9 @@ namespace GetLocation.Droid
 			
 			// aapt resource value: 0x7f050000
 			public const int myButton = 2131034112;
+			
+			// aapt resource value: 0x7f050004
+			public const int status_text = 2131034116;
 			
 			static Id()
 			{

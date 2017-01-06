@@ -28,4 +28,17 @@
         android:text="Address (when available)"
         android:id="@+id/address_text"
         android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:text="Location (when available)"
+        android:id="@+id/status_text"
+        android:layout_marginBottom="15dp" />
+    <TextView
+        android:id="@+id/accelerometer_text"
+        android:layout_width="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_height="wrap_content"
+        android:text="TEXT"/>
 </LinearLayout>
