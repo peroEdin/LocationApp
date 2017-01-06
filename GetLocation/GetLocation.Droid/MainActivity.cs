@@ -1,9 +1,6 @@
 ﻿using System;
 
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Locations;
@@ -11,10 +8,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Java.Lang;
 
 namespace GetLocation.Droid
 {
-	[Activity (Label = "GetLocation.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity (Label = "GetLocation.Droid", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ILocationListener
 	{
 		int count = 1;
@@ -52,6 +50,7 @@ namespace GetLocation.Droid
         protected override void OnResume()
         {
             base.OnResume();
+
             _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
         }
 
@@ -108,7 +107,7 @@ namespace GetLocation.Droid
         {
             if (address != null)
             {
-                StringBuilder deviceAddress = new StringBuilder();
+                System.Text.StringBuilder deviceAddress = new System.Text.StringBuilder();
                 for (int i = 0; i < address.MaxAddressLineIndex; i++)
                 {
                     deviceAddress.AppendLine(address.GetAddressLine(i));
